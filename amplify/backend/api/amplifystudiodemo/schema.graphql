@@ -1,0 +1,9 @@
+type Post @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  user_name: String
+  created_by: AWSDateTime
+  content: String
+  count_reply: Int
+  count_retweet: Int
+  count_favorite: Int
+}
